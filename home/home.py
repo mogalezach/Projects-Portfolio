@@ -7,22 +7,24 @@ Created on Thu Mar 26 04:44:51 2026
 
 import streamlit as st
 
-st.set_page_config(page_title="Zacharia Mogale Portfolio", layout="wide")
+st.set_page_config(
+    page_title="Zacharia Mogale Portfolio",
+    layout="wide"
+)
 
 st.title("Zacharia Mogale")
-st.subheader("Data Scientist")
+st.subheader("Data Scientist | Time Series Analytics")
 
 st.markdown("---")
-
-st.header("Projects")
-
-st.page_link("pages/1_FrontScore.py", label="🌍 FrontScore")
-st.page_link("pages/2_Crypto_TimeSeries.py", label="💰 Crypto Analysis")
-
-import streamlit as st
-
-st.set_page_config(layout="wide")
-
-st.title("FrontScore")
-
-st.write("Climate-based scoring model for cold fronts.")
+st.header("Welcome to my Portfolio")
+st.write(
+    """
+    Use the sidebar to navigate between projects.
+    Each project page contains:
+    - Overview
+    - Tools & Techniques
+    - Key Learnings / Outcomes
+    - Embedded PDF presentation
+    """
+)
+st.info("This portfolio highlights Data Science, Machine Learning, and Time Series projects.")
